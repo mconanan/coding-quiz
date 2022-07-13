@@ -102,20 +102,14 @@ restartButton.addEventListener("click", restartQuiz)
 submitButton.addEventListener("click", submitQuiz)
     function submitQuiz(){ 
     var initialsValue = initials.value;
-    // var highScores = JSON.parse(localStorage.getItem("highScores"));
     var savedScore = {
         score: timeLeft,
         initials: initialsValue
     }
-    // highScores.push(savedScore);
-    localStorage.setItem("savedScore", JSON.stringify(savedScore))
+    
+    localStorage.setItem("savedScore", JSON.stringify(savedScore));
 
-        
-    // var savingInitials = localStorage.setItem("initials", JSON.stringify(initialsValue));
-    // var savingScores = localStorage.setItem("score", JSON.stringify(timeLeft))
-    // localStorage.setItem("score", JSON.stringify(timeLeft));
-    // lastScore.innerText = "Last score:" + JSON.parse(localStorage.getItem(savingInitials, savingScores ))
-    lastScore.innerText = "Last score:" + localStorage.getItem("savedScore")
+    lastScore.innerText = "Last score:" + localStorage.getItem("savedScore");
     }
 
 //On clicking start button, start button is hidden and question container is revealed; the question here element is populated with the current question, and buttons are created for each answer; the timer is started. 
@@ -186,10 +180,6 @@ function nextQuestion() {
 
 //restartQuiz function to run if timer reaches 0, or at end of quiz.     
 function restartQuiz() {
-    location.reload()
-    
-
-
-
+    location.reload();
 }
 
