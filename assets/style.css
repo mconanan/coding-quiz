@@ -1,0 +1,41 @@
+.hide {
+    display:none;
+}
+
+.header {
+    text-align: center;
+}
+
+body {
+    background-color:blanchedalmond;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    border: solid 2px black;
+    padding: 50px;
+    box-shadow: black 2px 2px;
+
+}
+
+
+.hide {
+    display: none;
+}
+
+.question-here {
+    border-bottom: gray 2px solid;
+}
+.correct-incorrect {
+    border-top: gray 2px solid;
+}
+
+button {
+    background-color: white;
+    display: flex;
+    display: inline;
+    padding: 5px;
+    margin: 5px;
+}
